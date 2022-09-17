@@ -10,8 +10,8 @@ def make_pretty(func):
 def ordinary():
     print("I am ordinary")
 
-#result = make_pretty(ordinary)
-#result()
+result = make_pretty(ordinary)
+result()
 #ordinary()
 
 # decorator with param
@@ -49,4 +49,4 @@ def sub_heading(func):
 def print_paragraph(msg):
     print(msg)
 
-print_paragraph("Johny")
+#print_paragraph("Johny")
