@@ -1,5 +1,8 @@
 
 # decorator without param
+from ast import Pass
+
+
 def make_pretty(func):
     def inner():
         print("I got decorated")
@@ -10,8 +13,8 @@ def make_pretty(func):
 def ordinary():
     print("I am ordinary")
 
-result = make_pretty(ordinary)
-result()
+#result = make_pretty(ordinary)
+#result()
 #ordinary()
 
 # decorator with param
@@ -27,7 +30,7 @@ def smart_error(func):
 def divide(a,b):
     return a/b
 
-# print(divide(1,1))
+print(divide(1,0))
 
 # chaining the decorator
 def heading(func):
